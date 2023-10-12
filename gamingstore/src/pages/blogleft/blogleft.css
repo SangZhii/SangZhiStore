@@ -1,0 +1,329 @@
+/* Blog */
+section {
+    background-color: #000;
+}
+.blog-container {
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 60px 0px;
+    display: flex;
+}
+
+.blog-lists {
+    padding-inline: 45px;
+}
+
+.blog-items {
+    max-width: 900px;
+}
+
+.blog-items img{
+    width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+
+/* Blog Info */
+.blog-info {
+    color: #fff;
+}
+.blog-info h1 {
+    padding: 25px 0px;
+}
+.blog-info p{
+    font-size: 15px;
+    line-height: 1.666667;
+}
+.blog-footer {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+.blog-items {
+    padding-bottom: 50px;
+}
+.blog-footer__left,
+.blog-footer__left ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5px;
+}
+.blog-footer__left ul li {
+    display: flex;
+    align-items: center;
+    padding-inline: 2px;
+}
+.blog-footer__left ul li a{
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.blog-footer__left ul li a:hover {
+    color:  rgba(249, 170, 1, 0.8);
+}
+.blog-footer__left span {
+    border-left: 1px solid #fff;
+    height: 12px;
+    padding-left: 5px;
+}
+.blog-footer__left h4,
+.blog-footer__left .user{
+    color: rgba(249, 170, 1, 0.8);
+    font-size: .95rem;
+}
+.blog-footer__left h4 {
+    font-size: .75rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.blog-footer__left h6 {
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 400;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.blog-footer__left .cmt {
+    padding-left: 5px;
+}
+.blog-footer_read_detail a {
+    color: #fff;
+    font-size: .75rem;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.blog-pages {
+    display: flex;
+    align-items: center;
+    padding-inline: 45px;
+}
+.blog-pages a {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(249, 170, 1, 0.8);
+    border-radius: 50%;
+    margin: 7px 15px 7px 0px;
+    padding-top: 5px;
+    transition: .2s ease-in-out;
+}
+.blog-pages a:hover {
+    background-color: rgba(249, 170, 1, 0.8);
+}
+.blog-pages .active {
+    background-color: rgba(249, 170, 1, 0.8);
+}
+/* End Blog Info */
+
+/* Right Blog */
+.blog-right {
+    padding: 0px 15px;
+}
+.inputboxs {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.inputboxs .filter-search-icon {
+    position: absolute;
+    right: 20px;
+    color: #000;
+}
+.search-inputs input {
+    width: 100%;
+    height: 50px;
+    color: #000;
+    font-size: 15px;
+    line-height: 1.466667;
+    border: 1px solid rgba(249, 170, 1, 0.8);
+    border-radius: 25px;
+    outline: none;
+    padding-right: 55px;
+    padding-left: 28px;
+}
+/* Categories */
+.categories-container h3{
+    position: relative;
+    color: rgba(249, 170, 1, 0.8);
+    font-size: 22px;
+    line-height: 1.333333;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+.categories-container h3::after,
+.recommended-games h1::after,
+.archive-container h1::after,
+.tags-container h1::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 90px;
+    bottom: 0px;
+    background-color: rgba(249, 170, 1, 0.8);
+    width: 45px;
+    height: 4px;
+    z-index: 0;
+    box-shadow: 28px 5px 0px 0px rgba(249, 170, 1, 0.8);
+}
+.categories-item ul {
+    padding-block: 10px;
+}
+.categories-item ul li a {
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+.categories-item ul li a:hover {
+    color: rgba(249, 170, 1, 0.8);
+}
+/* End Categories */
+
+/* Recommended Games */
+.recommended-games h1 {
+    position: relative;
+    color: rgba(249, 170, 1, 0.8);
+    font-size: 22px;
+    line-height: 1.333333;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+.recommended-items {
+    display: flex;
+    padding-bottom: 30px;
+}
+.recommended-title {
+    width: 45%;
+    padding-left: 20px;
+    font-size: 15px;
+    line-height: 1.266667;
+}
+.recommended-title a {
+    color: #fff;
+    font-weight: 400;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.recommended-title a:hover {
+    color: rgba(249, 170, 1, 0.8);
+}
+.recommended-price {
+    color: red;
+    padding-top: 20px;
+}
+/* End Recommended Games */
+
+/* Archive */
+.archive-container h1 {
+    position: relative;
+    color: rgba(249, 170, 1, 0.8);
+    font-size: 22px;
+    line-height: 1.333333;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+.archive-items ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.archive-items a:hover{
+    color: rgba(249, 170, 1, 0.8);
+}
+.archive-items ul li{
+    padding-bottom: 10px;
+}
+.archive-items ul li a{
+    color: #fff;
+}
+/* End Archive */
+
+/* Tags */
+.tags-container h1 {
+    position: relative;
+    color: rgba(249, 170, 1, 0.8);
+    font-size: 22px;
+    line-height: 1.333333;
+    padding-top: 55px;
+    padding-bottom: 40px;
+}
+.tags-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    gap: 10px;
+}
+.tags-items {
+
+    margin: 10px 0px;
+}
+.tags-items a {
+    color: #fff;
+    font-size: 13px;
+    line-height: 1.923;
+    min-height: 30px;
+    border: 1px solid rgba(249, 170, 1, 0.8);
+    border-radius: 15px;
+    padding: 7px 15px; 
+}
+/* End Tags */
+
+/* End Right Blog */
+
+/* Responsive */
+@media screen and (max-width: 886px)  {
+    .blog-container {
+        max-width: 90%;
+        flex-direction: column;
+    }
+    .blog-right {
+        padding-inline: 45px;
+        margin-top: 55px;
+    }
+}
+@media screen and (max-width: 579px) {
+    .blog-container {
+        max-width: 95%;
+        flex-direction: column;
+    }
+    .blog-right {
+        max-width: 95%;
+        padding-inline: 10px;
+    }
+    .blog-lists {
+        padding-inline: 10px;
+    }
+    .blog-footer {
+        flex-wrap: wrap;
+    }
+    .blog-footer__left {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .cmt {
+        padding-right: 5px;
+    }
+    .blog-footer h6 {
+        padding: 0px;
+    }
+    .blog-pages {
+        padding-inline: 10px;
+    }
+}
+@media screen and (max-width: 269px) {
+    .blog-footer__left .cmt {
+        padding-left: 0px;
+    }
+    .recommended-games h1 {
+        font-size: 1rem;
+    }
+}
+/* End Responsive  */

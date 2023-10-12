@@ -1,0 +1,61 @@
+.actionContainer {
+    position: relative;
+}
+
+.col12 {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    top: 200px;
+    z-index: 1;
+}
+
+.actionContainer .glitch {
+    font-size: 2rem;
+}
+
+.latestblogTitle::after {
+    position: absolute;
+    content: "Biggest Series";
+    left: 0px;
+    right:0px;
+    top: -25px;
+    bottom: 0px;
+    color: #f9aa01;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 800;
+    transform: rotate(-4deg);
+}
+
+.mainSlide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.slide{
+    position: relative;
+}
+.slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+.none {
+    display: none;
+}
+
+.filter {
+    padding-block: 80px;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}

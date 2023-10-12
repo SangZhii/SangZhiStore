@@ -1,0 +1,16 @@
+.blogContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media screen and (max-width: 886px)  {
+    .blogContainer {
+        max-width: 90%;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 579px) {
+    .blogContainer {
+        max-width: 95%;
+        flex-direction: column;
+    }
+}

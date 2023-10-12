@@ -1,0 +1,193 @@
+/* Title  */
+
+.hotdeals-container {
+    background-color: #222;
+}
+
+.col-12 {
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-top: 100px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.hotdeals-header-title::after {
+    position: absolute;
+    content: "get now";
+    left: 100px;
+    right:0;
+    top: -23px;
+    color: #f9aa01;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Nothing You Could Do', cursive;
+    font-weight: 800;
+    transform: rotate(-4deg);
+}
+
+.glitch {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    animation: glitch 1000ms infinite;
+    text-align: center;
+}
+
+.glitch span {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    right: 0px;
+    text-align: center;
+}
+
+.glitch span:first-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    transform: translate(-0.05em, -0.025em);
+}
+
+.glitch span:last-child {
+    animation: glitch 650ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(0.05em, 0.025em);
+}
+
+.hotdeals-header-title {
+    font-size: 36px;
+    line-height: 1.1;
+    padding-bottom: 100px;
+}
+
+@keyframes glitch {
+    0% {
+    text-shadow: 0.05em 0 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0,.75), 0.025em 0.05em 0 rgba(0,0,255,.75);
+    }
+    14% {
+        text-shadow: 0.05em 0 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0,.75), 0.025em 0.05em 0 rgba(0,0,255,.75);
+    }
+    15% {
+        text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75), 0.025em 0.025em 0 rgba(0,255,0,.75), -0.05em -0.05em 0 rgba(0,0,255,.75);
+    }
+    49% {
+        text-shadow: -0.05em -0.025em 0 rgba(255,0,0,.75), 0.025em 0.025em 0 rgba(0,255,0,.75), -0.05em -0.05em 0 rgba(0,0,255,.75);
+    }
+    50% {
+        text-shadow: 0.025em 0.05em 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0,.75), 0 -0.05em 0 rgba(0,0,255,.75);
+    }
+    99% {
+        text-shadow: 0.025em 0.05em 0 rgba(255,0,0,.75), -0.025em -0.05em 0 rgba(0,255,0,.75), 0 -0.05em 0 rgba(0,0,255,.75);
+    }
+    100% {
+        text-shadow: -0.025em 0 0 rgba(255,0,0,.75), -0.025em -0.025em 0 rgba(0,255,0,.75), -0.025em -0.05em 0 rgba(0,0,255,.75);
+    }
+}
+
+/* End Title  */
+
+/* HOTDEALS CARD */
+.hotdeals-card-container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    padding-bottom: 100px;
+}
+
+.hotdeals-card-lists {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1 1 30%;
+    height: 100%;
+}
+.hotdeals-card-items img {
+    width: 100%;
+}
+
+.hotdeals-card-items {
+    position: relative;
+}
+
+.hotdeals-btn {
+    width: 100%;
+    height: 98.7%;
+    position: absolute;
+    top: 0;
+}
+
+.hotdeals-btn button {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    transform: translateY(90%);
+    visibility: hidden;
+}
+
+.underlines-container {
+    margin-left: 10%;
+}
+
+.underlines {
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    width: 0px;
+    height: 2px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.hotdeals-card-items:hover .hotdeals-btn button{
+    visibility: visible;
+    transform: translateY(0%);
+    transition: all .5s;
+    transition-delay: .4s;
+}
+
+.hotdeals-btn:hover .underlines {
+    width: 80px;
+    background-color: #fff;
+}
+
+.hotdeals-btn:hover {
+    cursor: pointer;
+    background-color: rgba(249, 170, 1, 0.8);
+}
+/* End HOTDEALS CARD */
+@media screen and (max-width: 419px) {
+    .glitch  {
+        left: -5%;
+    }
+}
+@media screen and (max-width: 395px) {
+    .hotdeals-card-container {
+        max-width: 100%;
+        margin-inline: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .hotdeals-header-title::after{
+        font-size: 1rem;
+        left: 0;
+        right: 20px;
+    }
+}

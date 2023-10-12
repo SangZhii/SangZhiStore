@@ -1,0 +1,302 @@
+.description-container {
+    max-width: 89.75%;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    color: #fff;
+}
+.description-list {
+    border: 1px solid #f9aa01;
+}
+.description-detail img,
+.description-addition img{
+    display: none;
+}
+.description-option {
+    padding-left: 10.7%;
+    padding-right: 11%;
+}
+.description-option ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.description-option ul li {
+    font-size: 15px;
+    color: #888;
+    line-height: 1.2;
+    padding: 0;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    margin-inline: 25px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.description-option ul li:hover {
+    opacity: .8;
+}
+.description-option .filter-active {
+    color: #333;
+    border-color: #797979;
+    background-color: #fff;
+}
+.description-item {
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
+.filter-active {
+    border: 1px solid red;
+}
+.description-additional,
+.description-info {
+    display: none;
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
+.description-additional ul li{
+    margin-bottom: 10px;
+}
+.description-detail {
+    display: none;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #888;
+    padding-left: 10.7%;
+    padding-right: 11%;
+}
+.description-detail p {
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
+.description-additional {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+.description-additional ul li{
+    display: flex;
+}
+.description-additional .title {
+    width: 145px;
+    color: #666;
+}
+.description-additional .child {
+    width: calc(100% - 145px);
+}
+.description-additional .child,
+.description-additional span {    
+    color: #888;
+}
+.description-additional ul li a {
+    align-items: center;
+    color: #f9aa01;
+    border: 1px solid #f9aa01;
+    padding: 5px;
+    margin-inline: 3px;
+    transition: .3s ease-in-out;
+}
+.description-additional ul li a:hover {
+    color: #fff;
+    background-color: #f9aa01;
+}
+.description-info__list {
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin: 0 auto;
+    padding-bottom: 70px;
+}
+.description-info__name,
+.description-info__list {
+    display: flex;
+    align-items: center;
+}
+.description-info__name {
+    justify-content: space-between;
+    padding-bottom: 17px;
+}
+.description-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 6px;
+    margin-right: 18px;
+}
+.description-info__name {
+    font-size: 16px;
+    line-height: 1.625;
+}
+.description-info__rate {
+    color: #f9aa01;
+    font-size: .90rem;
+}
+.description-info__about {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.console ul{
+    display: flex;
+}
+.filter-content {
+    display: block;
+}
+.description-review{
+    max-width: 50%;
+    flex: 0 0 50%;
+    margin: 0 auto;
+}
+.description-review p {
+    color: #888;
+    font-size: .90rem;
+}
+.description-review__rating {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 23px;
+}
+.description-review__rating h5 {
+    color: #666;
+    font-size: .90rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-right: 16px;
+}
+.description-form p,
+.description-form input[type="submit"] {
+    text-align: center;
+    transform: scaleX(-1);
+    padding-bottom: 5px;
+}
+.description-form input[type="radio"] {
+    display: none;
+    transform: scaleX(-1);
+}
+.description-form label {
+    color: grey;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transform: scaleX(-1);
+}
+.description-form label:hover,
+.description-form label:hover ~ label {
+    color: orange;
+    transform: scaleX(-1);
+}
+
+.description-form input[type="radio"]:checked ~ .description-form label {
+    color: orange;
+    transform: scaleX(-1);
+}
+.description-inputbox__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.description-comment__inputbox textarea{
+    width: 100%;
+    min-height: 100px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #f9aa01;
+    border-radius: 2px;
+    outline: none;
+    padding: 10px 20px;
+    resize: vertical;
+}
+.description-email__input{
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+.description-email__inputbox {
+    width: 100%;
+    display: flex;
+}
+.description-email__inputbox input {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #222;
+    border: 1px solid #f9aa01;
+    border-radius: 2px;
+    outline: none;
+    padding-inline: 20px;
+}
+.input-name {
+    padding-right: 15px;
+}
+.input-name,
+.input-email {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+}
+.input-name h5,
+.input-email h5,
+.description-review h5  {
+    color: #666;
+    font-size: .90rem;
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+}
+.description-inputbox__container button {
+    min-width: 134px;
+    height: 43px;
+    color: #fff;
+    background-color: #222;
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 22px;
+    margin-bottom: 10px;
+    padding-inline: 15px;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+.description-inputbox__container button:hover{
+    background-color: #f9aa01;
+}
+.description-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    margin-top: 73px;
+    padding-block: 15px;
+}
+.description-footer p {
+    color: #888;
+    text-transform: uppercase;
+    font-size: .80rem;
+    line-height: 1.923;
+    padding-inline: 25px;
+}
+
+@media screen and (max-width: 879px) {
+    .description-container {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .description-option ul {
+        flex-wrap: wrap;
+    }
+    .description-option ul li {
+        margin-block: 5px;
+    }
+}
+@media screen and (max-width: 285px) {
+    .description-option ul li {
+        margin-inline: 0px;
+    }
+}

@@ -1,0 +1,106 @@
+.about-container {
+    background-color: #000;
+    overflow: hidden;
+}
+.about-item {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.about-item__info {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding-top: 75px;
+    padding-bottom: 120px;
+    flex-direction: row;
+}
+.info {
+    flex-direction: row-reverse;
+}
+.info .about-item__info__detail {
+    padding-left: 87px;
+}
+.about-item__info__detail {
+    width: 70%;
+    flex: 0 70%;
+    padding-right: 87px;
+    padding-top: 7px;
+}
+.about-item__info__detail h4 {
+    color: #f9aa01;
+    font-size: 1.5rem;
+    padding-bottom: 16px;
+}
+.about-item__info__detail p {
+    font-size: .90rem;
+    padding-bottom: 26px;
+}
+.mission {
+    border-left: 3px solid #f9aa01;
+    margin-top: 22px;
+    padding-left: 29px;
+    padding-bottom: 9px;
+}
+.mission .steve {
+    color: #f9aa01;
+}
+.about-info__image {
+    width: 30%;
+    flex: 0 30%;
+    position: relative;
+    z-index: 1;
+}
+.about-info__image img{
+    width: 100%;
+}
+.about-info__image::before {
+    content: "";
+    display: block;
+    position: absolute;    
+    bottom: -21px;
+    left: -21px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    border: 3px solid #f9aa01;
+}
+@media screen and (max-width: 979px) {
+    .about-item {
+        max-width: 100%;
+    }
+    .about-item__info {
+        width: 100%;
+        flex-direction: column;
+    }
+    .about-item__info__detail {
+        width: 100%;
+        flex: 0 100%;
+        padding-inline: 15px;
+    }
+    .about-info__image {   
+        width: 100%;
+        max-width: 91.666667%;
+        flex: 0 0 91.666667%;
+        min-height: 1px;
+        padding-inline: 15px;
+        margin-inline: auto;
+    }
+    .about-info__image__border {
+        display: block;
+        overflow: hidden;
+    }
+    .about-info__image img {
+        width: 100%;
+        transition: transform 0.9s ease;
+    }
+    .about-info__image::before {
+        width: 90%;
+        bottom: -21px;
+        right: -10px;
+        left: auto;
+    }
+    .info .about-item__info__detail {
+        padding-inline: 15px;
+        padding-bottom: 30px;
+    }
+}
