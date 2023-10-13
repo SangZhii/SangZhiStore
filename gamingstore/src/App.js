@@ -17,6 +17,7 @@ import About from "./pages/about/About";
 import Contact from "./pages/contact/Contact";
 import Checkout from "./pages/checkout/Checkout";
 import { ShopContextProvider } from "./context/shopcontext";
+import Slider from "./components/Slider/Slider";
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Navbar />} />
+            <Route path="/" element={<Slider />} />
             <Route path="/homepage1" element={<Homepage1 />} />
             <Route path="/homepage2" element={<Homepage2 />} />
             <Route path="/homepage3" element={<Homepage3 />} />
