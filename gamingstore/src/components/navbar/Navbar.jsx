@@ -11,6 +11,7 @@ import { PRODUCT } from "../../product";
 import { NavbarIcon } from "./NavbarIcon";
 import Wishlist from "./Wishlist";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import Slider from "../Slider/Slider";
 
 const Navbar = ({ navbar }) => {
   const [pos, setPos] = useState("top");
@@ -396,6 +397,7 @@ const Navbar = ({ navbar }) => {
       {/* Cart */}
       <CartNavs hide={hide} cartRef={cartRef} showCart={showCart} />
       <Wishlist hide={hide} wishRef={wishRef} showWishlist={showWishlist} />
+      <Slider />
     </>
   );
 };

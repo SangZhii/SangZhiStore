@@ -8,10 +8,12 @@ import LatestBlogs from "../../components/latestblog/LatestBlogs";
 import Brands from "../../components/brand/Brands";
 import MainFooter from "../../components/mainfooter/MainFooter";
 import styles from "../homepage2/homepage2.module.css";
+import Navbar from "../../components/navbar/Navbar";
 
 const Homepage2 = () => {
   return (
     <div>
+      <Navbar />
       <SliderCard data={MAINSLIDE} />
       <div className={styles.newarrival}>
         {BANNER.map((banner, index) => {

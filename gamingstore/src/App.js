@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import Slider from "./components/Slider/Slider";
 import Homepage1 from "./pages/homepage1/Homepage1";
 import Homepage2 from "./pages/homepage2/Homepage2";
 import Homepage3 from "./pages/homepage3/Homepage3";
@@ -24,9 +23,8 @@ function App() {
     <div className="App">
       <ShopContextProvider>
         <Router>
-          <Navbar />
           <Routes>
-            <Route path="/" element={<Slider />} />
+            <Route path="/" element={<Navbar />} />
             <Route path="/homepage1" element={<Homepage1 />} />
             <Route path="/homepage2" element={<Homepage2 />} />
             <Route path="/homepage3" element={<Homepage3 />} />
