@@ -275,23 +275,23 @@ const Navbar = ({ navbar }) => {
             </button>
           </div>
           <div className="sidebar-list">
-            <Link to="/" className="side-link">
-              <a href="/#">Home</a>
+            <Link to="/SangZhiStore" className="side-link">
+              <a href="#top">Home</a>
             </Link>
             <Link to="/" className="side-link">
-              <a href="/#">My Watchlist</a>
+              <a href="#top">My Watchlist</a>
             </Link>
             <Link to="/" className="side-link">
-              <a href="/#">My Account</a>
+              <a href="#top">My Account</a>
             </Link>
             <Link to="/" className="side-link">
-              <a href="/#">Track Order</a>
+              <a href="#top">Track Order</a>
             </Link>
             <Link to="/" className="side-link">
-              <a href="/#">Refunds</a>
+              <a href="#top">Refunds</a>
             </Link>
             <Link to="/" className="side-link">
-              <a href="/#">Help & FAQs</a>
+              <a href="#top">Help & FAQs</a>
             </Link>
           </div>
           <h1 className="games">@Games</h1>
@@ -313,8 +313,8 @@ const Navbar = ({ navbar }) => {
                 onClick={(e) => handleClick(e, index)}
                 key={index}
               >
-                <Link to="/">
-                  <a href="/#" className={`active ${drop.className}`}>
+                <Link to="/SangZhiStore">
+                  <a href="#top" className={`active ${drop.className}`}>
                     {drop.heading}
                   </a>
                   {active === index ? (
@@ -325,17 +325,17 @@ const Navbar = ({ navbar }) => {
                         onClick={(e) => handleSub(e)}
                       >
                         <Link to={drop.to1} className="subheading">
-                          <a href="/#" onClick={closeNav}>
+                          <a href="#top" onClick={closeNav}>
                             {drop.subHeading1}
                           </a>
                         </Link>
                         <Link to={drop.to2} className="subheading">
-                          <a href="/#" onClick={closeNav}>
+                          <a href="#top" onClick={closeNav}>
                             {drop.subHeading2}
                           </a>
                         </Link>
                         <Link to={drop.to3} className="subheading">
-                          <a href="/#" onClick={closeNav}>
+                          <a href="#top" onClick={closeNav}>
                             {drop.subHeading3}
                           </a>
                         </Link>
@@ -343,7 +343,7 @@ const Navbar = ({ navbar }) => {
                           to={drop.to4}
                           className={`subheading ${drop.className}`}
                         >
-                          <a href="/#" onClick={closeNav}>
+                          <a href="#top" onClick={closeNav}>
                             {drop.subHeading4}
                           </a>
                         </Link>
