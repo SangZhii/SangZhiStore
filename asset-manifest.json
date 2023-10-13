@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/SangZhiStore/static/css/main.ae40d363.chunk.css",
-    "main.js": "/SangZhiStore/static/js/main.571bd62c.chunk.js",
-    "main.js.map": "/SangZhiStore/static/js/main.571bd62c.chunk.js.map",
+    "main.js": "/SangZhiStore/static/js/main.c45ccf7b.chunk.js",
+    "main.js.map": "/SangZhiStore/static/js/main.c45ccf7b.chunk.js.map",
     "runtime-main.js": "/SangZhiStore/static/js/runtime-main.93cfa645.js",
     "runtime-main.js.map": "/SangZhiStore/static/js/runtime-main.93cfa645.js.map",
     "static/css/2.a8a1f674.chunk.css": "/SangZhiStore/static/css/2.a8a1f674.chunk.css",
@@ -146,6 +146,6 @@
     "static/css/2.a8a1f674.chunk.css",
     "static/js/2.e0017221.chunk.js",
     "static/css/main.ae40d363.chunk.css",
-    "static/js/main.571bd62c.chunk.js"
+    "static/js/main.c45ccf7b.chunk.js"
   ]
 }
