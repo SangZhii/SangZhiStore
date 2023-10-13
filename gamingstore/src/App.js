@@ -24,7 +24,7 @@ function App() {
       <ShopContextProvider>
         <Router>
           <Routes>
-            <Route path="/" element={<Slider />} />
+            <Route path="/SangZhiStore" element={<Slider />} />
             <Route path="/homepage1" element={<Homepage1 />} />
             <Route path="/homepage2" element={<Homepage2 />} />
             <Route path="/homepage3" element={<Homepage3 />} />
