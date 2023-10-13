@@ -100,7 +100,11 @@ const Navbar = ({ navbar }) => {
         </a>
         <div className="nav-lists">
           <div className="dropdown">
-            <NavLink to="/" className="link" activeclassname="active">
+            <NavLink
+              to="/SangZhiStore"
+              className="link"
+              activeclassname="active"
+            >
               <a
                 href="/"
                 id="home"

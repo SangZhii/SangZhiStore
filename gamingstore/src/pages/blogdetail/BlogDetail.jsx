@@ -6,10 +6,7 @@ import "../blogleft/blogleft.css";
 import "../blogdetail/blogdetail.css";
 import style from "../blogdetail/blogdetail.module.css";
 import MainFooter from "../../components/mainfooter/MainFooter";
-import {
-  faArrowRight,
-  faMagnifyingGlass,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import {
   ARCHIVE,
   BANNER,
@@ -18,11 +15,12 @@ import {
   RECOMMEND,
   TAGS,
 } from "../blogleft/bloglefts";
+import { Link } from "react-router-dom";
 
 const BlogDetail = () => {
   return (
     <>
-      <Navbar navbar={style.navbar} />
+      <Navbar />
       <div className={style.actionContainer}>
         <div className="latest-blog">
           <div className={style.col12}>
@@ -56,26 +54,29 @@ const BlogDetail = () => {
                       <span></span>
                       <ul>
                         <li>
-                          <a href="/#">#</a>
+                          <Link to="/SangZhiStore">
+                            <a href="/#">#</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/#">Adventure</a>
+                          <Link to="/adventure">
+                            <a href="/#">Adventure</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/#">Action</a>
+                          <Link to="/adventure">
+                            <a href="/#">Action</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/#">Sports</a>
+                          <Link to="/sports">
+                            <a href="/#">Sports</a>
+                          </Link>
                         </li>
                       </ul>
                       <span></span>
                       <FontAwesomeIcon icon={faComment} className="cmt" />
                       <h6>8 Comments</h6>
-                    </div>
-
-                    <div className="blog-footer_read_detail">
-                      <a href="/#">Continue Reading</a>
-                      <FontAwesomeIcon icon={faArrowRight} />
                     </div>
                   </div>
                   <div className="blog-info">
@@ -88,8 +89,12 @@ const BlogDetail = () => {
 
             <div className="blog-page">
               <h4>Tags: </h4>
-              <a href="/#">Action</a>
-              <a href="/#">Role-Play</a>
+              <Link to="/adventure" className="detail-tag">
+                Action
+              </Link>
+              <Link to="/kids" className="detail-tag">
+                Role-Play
+              </Link>
             </div>
             <div className="blog-message">
               <h1>Leave A Comment</h1>
@@ -146,7 +151,9 @@ const BlogDetail = () => {
                   <div className="categories-item">
                     <ul>
                       <li>
-                        <a href="/#">{cate.item}</a>
+                        <Link to={cate.to}>
+                          <a href="/#">{cate.item}</a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -157,11 +164,11 @@ const BlogDetail = () => {
               <h1>Recommended Games</h1>
               {RECOMMEND.map((recom, idx) => (
                 <div className="recommended-items" key={idx}>
-                  <a href="/#" className="overlay">
+                  <a href="#top" className="overlay">
                     <img src={recom.img} alt="product" />
                   </a>
                   <div className="recommended-title">
-                    <a href="/#">{recom.title}</a>
+                    <a href="#top">{recom.title}</a>
                     <div className="recommended-price">
                       <p>{recom.price}</p>
                     </div>
@@ -175,7 +182,7 @@ const BlogDetail = () => {
                 <div className="archive-items" key={idx}>
                   <ul>
                     <li>
-                      <a href="/#">
+                      <a href="#top">
                         <span>{arch.items}</span>
                         <span>{arch.num}</span>
                       </a>
@@ -189,7 +196,9 @@ const BlogDetail = () => {
               <div className="tags-list">
                 {TAGS.map((tag, idx) => (
                   <div className="tags-items" key={idx}>
-                    <a href="/#">{tag.item}</a>
+                    <Link to={tag.to} className="link-tag">
+                      {tag.item}
+                    </Link>
                   </div>
                 ))}
               </div>

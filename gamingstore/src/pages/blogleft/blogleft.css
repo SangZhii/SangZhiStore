@@ -262,10 +262,9 @@ section {
     gap: 10px;
 }
 .tags-items {
-
     margin: 10px 0px;
 }
-.tags-items a {
+.tags-items .link-tag {
     color: #fff;
     font-size: 13px;
     line-height: 1.923;
@@ -273,6 +272,11 @@ section {
     border: 1px solid rgba(249, 170, 1, 0.8);
     border-radius: 15px;
     padding: 7px 15px; 
+    transition: .4s all;
+}
+.tags-items .link-tag:hover {
+    background-color: rgba(249, 170, 1, 0.8);
+    color: #fff;
 }
 /* End Tags */
 

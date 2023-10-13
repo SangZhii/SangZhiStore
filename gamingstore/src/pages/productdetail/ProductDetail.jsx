@@ -61,7 +61,7 @@ const ProductDetail = () => {
 
   return (
     <>
-      <Navbar navbar={style.navbar} />
+      <Navbar />
       <div className={style.actionContainer}>
         <div className="latest-blog">
           <div className={style.col12}>

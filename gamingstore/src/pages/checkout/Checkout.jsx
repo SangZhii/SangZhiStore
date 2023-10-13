@@ -1,6 +1,5 @@
 import * as React from "react";
 import Navbar from "../../components/navbar/Navbar";
-import style from "../checkout/Checkout.module.css";
 import "../checkout/Checkout.css";
 import { Country } from "./country";
 import MainFooter from "../../components/mainfooter/MainFooter";
@@ -195,7 +194,7 @@ export default function Checkout() {
 
   return (
     <>
-      <Navbar navbar={style.navbar} />
+      <Navbar />
       <div className="checkout-content">
         <div className="checkout-container">
           <div className="content-area">

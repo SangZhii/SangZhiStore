@@ -203,16 +203,16 @@
     visibility: hidden;
     opacity: 0;
 }
-.dropdown-menu a     {
-    color: #fff;
+.dropdown-menu a {
     display: inline-block;
     width: 100%;
+    color: #fff;
     text-decoration: none;
-    -webkit-transition: all 1s;
-    transition: all 1s;
     padding-left: 10px;
-    padding-block: 4px;
+    padding-block: 6px;
     z-index: 9999;
+    transition: all 1s;
+    -webkit-transition: all 1s;
 }
 .dropdown a > .dropdown-menu a > [role="menuitem"][aria-current],
 .dropdown a > .dropdown-menu a > [role="menuitem"].aria-current-path {
@@ -884,7 +884,7 @@ nav:hover {
     transition: .4s ease-in-out;
 }
 .search-bar__responsive {
-    top: -800px;
+    top: -880px;
 }
 .search-bar form {
     position: relative;

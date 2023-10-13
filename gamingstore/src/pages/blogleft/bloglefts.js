@@ -44,18 +44,23 @@ export const BLOG = [
 export const CATEGORY = [
   {
     item: "Action & Adventure",
+    to: "/adventure",
   },
   {
     item: "Sports",
+    to: "/sports",
   },
   {
     item: "Kids and Family",
+    to: "/kids",
   },
   {
     item: "RPG",
+    to: "/homepage1",
   },
   {
     item: "Race",
+    to: "/sports",
   },
 ];
 
@@ -115,17 +120,22 @@ export const ARCHIVE = [
 export const TAGS = [
   {
     item: "Action",
+    to: "/adventure",
   },
   {
     item: "Adventure",
+    to: "/adventure",
   },
   {
     item: "Sports",
+    to: "/sports",
   },
   {
     item: "Race",
+    to: "/sports",
   },
   {
     item: "Kids and Family",
+    to: "/kids",
   },
 ];

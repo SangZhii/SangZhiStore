@@ -9,7 +9,7 @@ import MainFooter from "../../components/mainfooter/MainFooter";
 const About = () => {
   return (
     <>
-      <Navbar navbar={style.navbar} />
+      <Navbar />
       <div className={style.actionContainer}>
         <div className="latest-blog">
           <div className={style.col12}>

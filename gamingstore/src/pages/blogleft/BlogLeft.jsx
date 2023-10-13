@@ -10,11 +10,12 @@ import {
   faArrowRight,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const BlogLeft = ({ className, fullWidth, blogItems }) => {
   return (
     <>
-      <Navbar navbar={style.navbar} />
+      <Navbar />
       <div className={style.actionContainer}>
         <div className="latest-blog">
           <div className={style.col12}>
@@ -52,16 +53,24 @@ const BlogLeft = ({ className, fullWidth, blogItems }) => {
                       <span></span>
                       <ul>
                         <li>
-                          <a href="/#">#</a>
+                          <Link to="/SangZhiStore">
+                            <a href="/#">#</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/#">Adventure</a>
+                          <Link to="/adventure">
+                            <a href="/#">Adventure</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/#">Action</a>
+                          <Link to="/adventure">
+                            <a href="/#">Action</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/#">Sports</a>
+                          <Link to="/sports">
+                            <a href="/#">Sports</a>
+                          </Link>
                         </li>
                       </ul>
                       <span></span>
@@ -70,7 +79,9 @@ const BlogLeft = ({ className, fullWidth, blogItems }) => {
                     </div>
 
                     <div className="blog-footer_read_detail">
-                      <a href="/#">Continue Reading</a>
+                      <Link to="/blogdetail">
+                        <a href="/#">Continue Reading</a>
+                      </Link>
                       <FontAwesomeIcon icon={faArrowRight} />
                     </div>
                   </div>
@@ -79,10 +90,10 @@ const BlogLeft = ({ className, fullWidth, blogItems }) => {
             ))}
 
             <div className="blog-pages">
-              <a href="/#" className="active">
+              <a href="#top" className="active">
                 1
               </a>
-              <a href="/#">2</a>
+              <a href="#top">2</a>
             </div>
           </div>
           <div className={`blog-right ${fullWidth}`}>
@@ -104,7 +115,9 @@ const BlogLeft = ({ className, fullWidth, blogItems }) => {
                   <div className="categories-item">
                     <ul>
                       <li>
-                        <a href="/#">{cate.item}</a>
+                        <Link to={cate.to}>
+                          <a href="/#">{cate.item}</a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -115,11 +128,11 @@ const BlogLeft = ({ className, fullWidth, blogItems }) => {
               <h1>Recommended Games</h1>
               {RECOMMEND.map((recom, idx) => (
                 <div className="recommended-items" key={idx}>
-                  <a href="/#" className="overlay">
+                  <a href="#top" className="overlay">
                     <img src={recom.img} alt="product" />
                   </a>
                   <div className="recommended-title">
-                    <a href="/#">{recom.title}</a>
+                    <a href="#top">{recom.title}</a>
                     <div className="recommended-price">
                       <p>{recom.price}</p>
                     </div>
@@ -133,7 +146,7 @@ const BlogLeft = ({ className, fullWidth, blogItems }) => {
                 <div className="archive-items" key={idx}>
                   <ul>
                     <li>
-                      <a href="/#">
+                      <a href="#top">
                         <span>{arch.items}</span>
                         <span>{arch.num}</span>
                       </a>
@@ -147,7 +160,9 @@ const BlogLeft = ({ className, fullWidth, blogItems }) => {
               <div className="tags-list">
                 {TAGS.map((tag, idx) => (
                   <div className="tags-items" key={idx}>
-                    <a href="/#">{tag.item}</a>
+                    <Link to={tag.to} className="link-tag">
+                      {tag.item}
+                    </Link>
                   </div>
                 ))}
               </div>
